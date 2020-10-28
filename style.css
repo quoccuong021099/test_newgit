@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+li {
+  list-style: none;
+}
+.top-1 {
+  background-image: url("https://loremflickr.com/320/240");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.weekly-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+}
+.weekly-item .number {
+  font-size: 20px;
+  padding: 0 20px;
+}
+.weekly-item .info {
+  font-size: 14px;
+  flex-grow: 1;
+}
+.weekly-item .song-title {
+  margin-bottom: 10px;
+}
+.weekly-item .singer {
+  font-size: 13px;
+  color: #999;
+}
+.weekly-item .view-count {
+  font-size: 13px;
+  color: #999;
+  padding: 0 20px;
+}
+.album {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  height: 128px;
+}
+
+.album-cover {
+  background-color: #ddd;
+  width: 128px;
+  height: 100%;
+  background-image: url("https://loremflickr.com/320/240");
+  color: #fff;
+}
+.album-cover .overlay {
+  padding: 5px;
+  display: flex;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(109, 108, 126, 0.8827906162464986) 0%,
+    rgba(142, 142, 170, 0.6446953781512605) 35%,
+    rgba(180, 213, 219, 0.4290091036414566) 100%
+  );
+  align-items: flex-end;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+.album .list-week {
+  color: rebeccapurple;
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 30px;
+}
+.album .list-week .view-count,
+.album .list-week .singer {
+  font-size: 13px;
+  color: #999;
+}
+
+.album-endweek {
+  background-color: #ddd;
+  width: 128px;
+  height: 128px;
+  background-image: url("https://loremflickr.com/320/240");
+  color: #fff;
+}
+.album-endweek .overlay {
+  padding: 5px;
+  display: flex;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(109, 108, 126, 0.8827906162464986) 0%,
+    rgba(142, 142, 170, 0.6446953781512605) 35%,
+    rgba(180, 213, 219, 0.4290091036414566) 100%
+  );
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 30px;
+  justify-content: center;
+  opacity: 0;
+}
+.album-endweek:hover .overlay {
+  opacity: 1;
+}
+
+
+
+.menu{
+  background-color: black;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu .menu-item .tag-a{
+  padding: 20px 30px;
+  display: block;
+}
+.menu .menu-item{
+  position: relative;
+}
+.menu .menu-item:hover{
+  background-color: #585858;
+}
+.menu .menu-item:hover .small-menu{
+  display: block;
+  top: 100%;
+  left: 0;
+}
+.small-menu{
+  position: absolute;
+  background-color: #585858;
+  padding: 0;
+  display: none;
+box-sizing: border-box;
+}
+.small-menu .li-item:hover{
+  background-color: #0101DF;
+}
+
+a + li {
+  color: red;
+}
+
+
+
+.album-hover {
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: #a38e8e;
+}
+.album-hover .overlay{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 1s;
+}
+.album-hover:hover .overlay{
+  opacity: 1;
+  background-color: rgb(68, 61, 61);
+}
+.album-hover .overlay img{
+  width: 50px;
+  transition: all .5s;
+}
+.album-hover:hover .overlay img{
+  width: 100px;
+  transform: rotate(360deg);
+}
